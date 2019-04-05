@@ -25,6 +25,21 @@ window.onload = function(){
     
     //draw flakes onto canvas
 
+    function drawFlakes() {
+        ctx.clearRect(0, 0, W, H);
+        ctx.fillStyle = "White";
+        ctx.beginPath();
+        for (var i = 0; i < mf; i++) {
+            var f = flakes[i];
+            ctx.moveTo(f.x, f.y);
+            ctx.arc(f.x, f.y, f.r, 0, Math.PI*2, true);
+        }
+        ctx.fill();
+        moveFlakes();
+    }
+
     
+
+
 
 }
