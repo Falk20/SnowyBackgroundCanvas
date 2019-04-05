@@ -63,5 +63,5 @@ window.onload = function(){
             }
         }
     }
-
+    setInterval(drawFlakes, 10);
 }
